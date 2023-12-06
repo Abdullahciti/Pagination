@@ -1,0 +1,65 @@
+*, *::Before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.1s all linear;
+}
+body{
+    font-family: tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8ecfe786;
+}
+.pagination {
+    background: #ffffff7a;
+}
+.pagination ul{
+    display: flex;
+    list-style: none;
+}
+button, .pagination ul li{
+    margin: 10px;
+    background: #8ecfe786;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    user-select: none;
+}
+button{
+    display: block;
+    border: none;
+}
+.active{
+    background: rgb(32, 32, 153) !important;
+    color: white;
+}
+.time-active{
+    color:rgb(32, 32, 153);
+}
+.time-active i{
+    transform: scale(1.2);
+    color:rgb(32, 32, 153);
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* @media */
+@media (max-width:767px) {
+    .pagination ul li, button{
+        margin: 5px;
+        padding: 5px;
+        font-size: 11px;
+    }
+}
+@media (max-width:350px) {
+    .pagination ul li, button{
+        margin: 4px;
+        padding: 4px;
+        font-size: 8px;
+    }
+}
